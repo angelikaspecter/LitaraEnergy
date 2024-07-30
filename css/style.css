@@ -2039,16 +2039,25 @@ html {
 }
 .services__item {
   width: 100%;
-  flex: 1 1 calc(33.3333333333% - 20px);
 }
-@media screen and (min-width: 992px) and (max-width: 1439.98px) {
+@media screen and (min-width: 1440px) {
+  .services__item {
+    flex: 1 1 calc(33.3333333333% - 20px);
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .services__item {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
   .services__item {
     flex: 0 1 calc(50% - 20px);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .services__item {
-    flex: 1 1 100%;
+    flex: 0 1 calc(50% - 20px);
   }
 }
 @media screen and (min-width: 465px) and (max-width: 767.98px) {
@@ -2056,7 +2065,12 @@ html {
     flex: 1 1 100%;
   }
 }
-@media screen and (max-width: 464.98px) {
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .services__item {
+    flex: 1 1 100%;
+  }
+}
+@media screen and (max-width: 374.98px) {
   .services__item {
     flex: 1 1 100%;
   }
@@ -2087,16 +2101,32 @@ html {
   background-color: var(--light-primary);
 }
 .services__card--wrap {
-  height: 100%;
-  min-height: 140px;
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
+@media screen and (min-width: 1440px) {
+  .services__card--wrap {
+    height: 100%;
+    min-height: 140px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .services__card--wrap {
+    height: 100%;
+    min-height: 140px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .services__card--wrap {
+    height: 100%;
+    min-height: 140px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .services__card--wrap {
     height: auto;
-    min-height: auto;
+    min-height: 140px;
   }
 }
 @media screen and (min-width: 465px) and (max-width: 767.98px) {
@@ -2105,7 +2135,13 @@ html {
     min-height: auto;
   }
 }
-@media screen and (max-width: 464.98px) {
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .services__card--wrap {
+    height: auto;
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 374.98px) {
   .services__card--wrap {
     height: auto;
     min-height: auto;
