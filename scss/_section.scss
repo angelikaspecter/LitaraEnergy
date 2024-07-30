@@ -21,18 +21,25 @@
         align-items: center;
         justify-content: center;
         @media screen and (min-width: 1440px) {
+            padding: 100px 200px;
         }
         @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            padding: 100px 200px;
         }
         @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            padding: 75px 100px;
         }
         @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            padding: 50px 50px;
         }
         @media screen and (min-width: 465px) and (max-width: 767.98px) {
+            padding: 40px 40px;
         }
         @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            padding: 40px 20px;
         }
         @media screen and (max-width: 374.98px) {
+            padding: 40px 20px;
         }
     }
     &--footer {

@@ -135,6 +135,41 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1440px) {
+  .section--content {
+    padding: 100px 200px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .section--content {
+    padding: 100px 200px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .section--content {
+    padding: 75px 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .section--content {
+    padding: 50px 50px;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .section--content {
+    padding: 40px 40px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .section--content {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .section--content {
+    padding: 40px 20px;
+  }
+}
 .section--footer {
   width: 100%;
   display: flex;
@@ -577,7 +612,9 @@ html {
 }
 @media screen and (min-width: 465px) and (max-width: 767.98px) {
   .footer__img--map {
-    margin-left: auto;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 464.98px) {
@@ -1154,6 +1191,20 @@ html {
 .btn--secondary:hover, .btn--secondary:active, .btn--secondary:focus {
   transition: all 0.3s ease-in-out;
   transform: scale(1.025);
+}
+.btn--icon {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.btn--icon.hide {
+  display: none;
 }
 
 .admin__list {
