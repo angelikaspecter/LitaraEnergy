@@ -1,0 +1,159 @@
+.footer {
+    &__list {
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        list-style: none;
+        @media screen and (min-width: 1440px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "logo info oferta contact";
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "logo info"
+                "oferta contact";
+        }
+        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "logo info"
+                "oferta contact";
+        }
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "logo info"
+                "oferta contact";
+        }
+        @media screen and (min-width: 465px) and (max-width: 767.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto 1fr;
+            grid-template-areas:
+                "logo"
+                "info"
+                "oferta"
+                "contact";
+        }
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto 1fr;
+            grid-template-areas:
+                "logo"
+                "info"
+                "oferta"
+                "contact";
+        }
+        @media screen and (max-width: 374.98px) {
+            gap: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto 1fr;
+            grid-template-areas:
+                "logo"
+                "info"
+                "oferta"
+                "contact";
+        }
+    }
+    &__item {
+        &--logo {
+            grid-area: logo;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media screen and (min-width: 1440px) {
+                align-items: flex-start;
+            }
+            @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+                align-items: flex-start;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+                align-items: flex-start;
+            }
+            @media screen and (min-width: 768px) and (max-width: 991.98px) {
+                align-items: flex-start;
+            }
+            @media screen and (min-width: 465px) and (max-width: 767.98px) {
+                align-items: center;
+            }
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                align-items: center;
+            }
+            @media screen and (max-width: 374.98px) {
+                align-items: center;
+            }
+        }
+        &--info {
+            grid-area: info;
+        }
+        &--oferta {
+            grid-area: oferta;
+        }
+        &--contact {
+            grid-area: contact;
+        }
+    }
+    &__img {
+        display: flex;
+        &--logo {
+            @media screen and (min-width: 1440px) {
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 768px) and (max-width: 991.98px) {
+                justify-content: flex-start;
+            }
+            @media screen and (min-width: 465px) and (max-width: 767.98px) {
+                justify-content: center;
+            }
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                justify-content: center;
+            }
+            @media screen and (max-width: 374.98px) {
+                justify-content: center;
+            }
+        }
+        &--map {
+            justify-content: center;
+            @media screen and (min-width: 1440px) {
+                margin: auto;
+                margin-top: 0;
+            }
+            @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+                margin: auto;
+                margin-top: 0;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+                margin: auto;
+                margin-top: 0;
+            }
+            @media screen and (min-width: 768px) and (max-width: 991.98px) {
+                margin: auto;
+                margin-top: 0;
+            }
+            @media screen and (min-width: 465px) and (max-width: 767.98px) {
+                margin-left: auto;
+            }
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                margin-left: auto;
+            }
+            @media screen and (max-width: 374.98px) {
+                margin-left: auto;
+            }
+        }
+    }
+}

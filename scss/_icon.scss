@@ -1,0 +1,20 @@
+.icon {
+    &--large {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+    }
+    &--normal {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    &--small {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
+    &.hide {
+        display: none;
+    }
+}

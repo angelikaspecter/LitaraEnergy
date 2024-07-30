@@ -1,0 +1,58 @@
+:root {
+    --font-primary: "Montserrat";
+    --light-primary: #ffffff;
+    --light-secondary: #F4F4F4;
+    --middle-primary: #e9ecf0;
+    --middle-secondary: #7c7c7c;
+    --dark-primary: #0a1e3f;
+    --dark-secondary: #262626;
+    --accedent-primary: #01b307;
+    --accedent-secondary: #243f6c;
+}
+
+@import "_fonts";
+@import "_mixins";
+@import "_outline";
+@import "_scrollbar";
+@import "_section";
+@import "_title";
+@import "_desc";
+@import "_header";
+@import "_footer";
+@import "_nav";
+@import "_social";
+@import "_faq";
+@import "_icon";
+@import "_logo";
+@import "_search";
+@import "_btn";
+@import "_admin";
+@import "_privilege";
+@import "_infinite";
+@import "_steps";
+@import "_img";
+@import "_services";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+}
+@media screen and (max-width: 374.98px) {
+}

@@ -1,0 +1,40 @@
+@mixin btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	padding: 24px;
+	border-radius: 100px;
+	font-size: 14px;
+	&--solid {
+		background-color: var(--accedent-primary);
+		color: var(--light-primary);
+	}
+	&--outline {
+		background-color: transparent;
+		border: 1px solid var(--accedent-primary);
+		color: var(--accedent-primary);
+	}
+	&__icon {
+		object-fit: contain;
+		&--big {
+			width: 24px;
+			height: 24px;
+		}
+		&--small {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
+@mixin text {
+	font-size: 14px;
+	font-weight: 300;
+	&--light {
+		color: var(--light-primary);
+	}
+	&--small {
+		font-size: 12px;
+	}
+}

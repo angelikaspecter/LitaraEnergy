@@ -1,0 +1,44 @@
+.title {
+    &--section {
+        font-size: calc(24px + (34 - 24) * ((100vw - 320px) / (1440 - 320)));
+        font-weight: bold;
+    }
+    &--sub {
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1440 - 320)));
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &--light {
+        color: var(--light-primary);
+    }
+    &--dark {
+        color: var(--dark-secondary);
+    }
+    &--middle {
+        color: var(--middle-secondary);
+    }
+    &--color {
+        color: var(--accedent-primary);
+    }
+    &--thin {
+        font-weight: 300;
+    }
+    &--regular {
+        font-weight: 400;
+    }
+    &--medium {
+        font-weight: 500;
+    }
+    &--semibold {
+        font-weight: 600;
+    }
+    &--bold {
+        font-weight: 700;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--center {
+        text-align: center;
+    }
+}
