@@ -11,8 +11,81 @@
 
 <body>
     <main class="content">
+        <section class="section section--content form">
+            <ul class="form__list">
+                <li class="form__item form__item--small">
+                    <div class="form__title">
+                        <p class="desc desc--extrasmall desc--semibold desc--color desc--uppercase">wypełnij formularz
+                            zapytania, a my skontaktujemy się z Tobą</p>
+                        <h2 class="title title--section title--bold title--dark">Niech rozpocznie się podróż</h2>
+                    </div>
+                    <p class="desc desc--normal desc--thin desc--dark">Chcesz otrzymać bezpłatną wycenę bez żadnych
+                        zobowiązań lub po prostu zadaj kilka pytań</p>
+                </li>
+                <li class="form__item form__item--large">
+                    <form action="" method="post" class="form__wrap">
+                        <div class="form__wrap--column">
+                            <label for="name" class="form__label">
+                                <span class="desc desc--extrasmall desc--medium desc--light">Imię *</span>
+                            </label>
+                            <input type="text" name="name"
+                                class="form__input desc desc--extrasmall desc--medium desc--light desc--uppercase"
+                                id="name" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="form__wrap--column">
+                            <label for="surname" class="form__label">
+                                <span class="desc desc--extrasmall desc--medium desc--light">Nazwisko *</span>
+                            </label>
+                            <input type="text" name="surname"
+                                class="form__input desc desc--extrasmall desc--medium desc--light desc--uppercase"
+                                id="surname" placeholder="Twoje nazwisko" required>
+                        </div>
+                        <div class="form__wrap--column">
+                            <label for="phone" class="form__label">
+                                <span class="desc desc--extrasmall desc--medium desc--light">Numer telefonu *</span>
+                            </label>
+                            <input type="tel" name="phone"
+                                class="form__input desc desc--extrasmall desc--medium desc--light desc--uppercase"
+                                id="phone" placeholder="Numer telefonu" required>
+                        </div>
+                        <div class="form__wrap--column">
+                            <label for="email" class="form__label">
+                                <span class="desc desc--extrasmall desc--medium desc--light">Email *</span>
+                            </label>
+                            <input type="tel" name="email"
+                                class="form__input desc desc--extrasmall desc--medium desc--light desc--uppercase"
+                                id="email" placeholder="Twój email" required>
+                        </div>
+                        <div class="form__wrap--column">
+                            <label for="msg" class="form__label">
+                                <span class="desc desc--extrasmall desc--medium desc--light">Wiadomość</span>
+                            </label>
+                            <textarea type="text" rows="5" name="msg"
+                                class="form__textarea desc desc--extrasmall desc--medium desc--light desc--uppercase"
+                                id="msg" placeholder="Napisz swoją wiadomość tutaj"></textarea>
+                        </div>
+                        <div class="form__wrap--checkbox">
+                            <div class="form__wrap--row">
+                                <input type="checkbox" name="checkbox" class="form__checkbox" id="checkbox">
+                                <label for="checkbox" class="form__label">
+                                    <p class="desc desc--extrasmall desc--thin desc--light">Zapoznałem się z <a href="#"
+                                            target="_blank"
+                                            class="desc desc--extrasmall desc--thin desc--light">„Polityką
+                                            prywatności”</a> i wyrażam zgodę na przetwarzanie moich danych osobowych.
+                                    </p>
+                                </label>
+                            </div>
+                            <button class="btn btn--primary" type="submit"><span
+                                    class="desc desc--extrasmall desc--bold desc--light desc--uppercase">wysyłać</span>
+                                <img src="img/btn-arrow-light.svg" alt="" class="icon icon--small"></button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </section>
         <section class="section section--content services">
-            <h2 class="title title--section title--bold title--dark title--center">Zainstalowany przez profesjonalistę</h2>
+            <h2 class="title title--section title--bold title--dark title--center">Zainstalowany przez profesjonalistę
+            </h2>
             <ul class="services__list">
                 <li class="services__item">
                     <div class="services__card">
@@ -24,7 +97,9 @@
                                 <h3 class="desc desc--normal desc--semibold desc--dark desc--uppercase desc--center">
                                     Instalacja
                                     stacje ładowania <br> aut AC, DC</h3>
-                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Zainstalowanie przez nas ładowarki jest szybkie, niezawodnie i proste, a my jesteśmy do Twojej dyspozycji na każdym etapie procesu.</p>
+                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Zainstalowanie
+                                    przez nas ładowarki jest szybkie, niezawodnie i proste, a my jesteśmy do Twojej
+                                    dyspozycji na każdym etapie procesu.</p>
                             </div>
                             <a href="#" class="btn btn--secondary"><span
                                     class="desc desc--extrasmall desc--medium desc--color desc--uppercase">Sprawdź naszą
@@ -42,7 +117,9 @@
                             <div class="services__card--wrap">
                                 <h3 class="desc desc--normal desc--semibold desc--dark desc--uppercase desc--center">
                                     Montaż paneli <br> fotowoltaicznych</h3>
-                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Nasze usługi obejmują wszystkie aspekty projektowania fotowoltaiki, instalacji, testowania, uruchomienia i konserwacji.</p>
+                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Nasze usługi
+                                    obejmują wszystkie aspekty projektowania fotowoltaiki, instalacji, testowania,
+                                    uruchomienia i konserwacji.</p>
                             </div>
                             <a href="#" class="btn btn--secondary"><span
                                     class="desc desc--extrasmall desc--medium desc--color desc--uppercase">Nasza
@@ -60,7 +137,9 @@
                             <div class="services__card--wrap">
                                 <h3 class="desc desc--normal desc--semibold desc--dark desc--uppercase desc--center">
                                     Montaż stacjonarnych <br> magazynów energii</h3>
-                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Wybierając akumulatory do zastosowań mieszkaniowych, otwierasz drzwi do znacznych oszczędności w kosztach energii w domu.</p>
+                                <p class="desc desc--extrasmall desc--light desc--dark desc--center">Wybierając
+                                    akumulatory do zastosowań mieszkaniowych, otwierasz drzwi do znacznych oszczędności
+                                    w kosztach energii w domu.</p>
                             </div>
                             <a href="#" class="btn btn--secondary"><span
                                     class="desc desc--extrasmall desc--medium desc--color desc--uppercase">Więcej

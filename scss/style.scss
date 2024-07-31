@@ -11,7 +11,6 @@
 }
 
 @import "_fonts";
-@import "_mixins";
 @import "_outline";
 @import "_scrollbar";
 @import "_section";
@@ -32,6 +31,8 @@
 @import "_steps";
 @import "_img";
 @import "_services";
+@import "_form";
+@import "_checkbox";
 
 * {
     margin: 0;

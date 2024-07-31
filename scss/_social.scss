@@ -7,7 +7,10 @@
             @media screen and (min-width: 465px) and (max-width: 767.98px) {
                 width: 100%;
             }
-            @media screen and (max-width: 464.98px) {
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                width: 100%;
+            }
+            @media screen and (max-width: 374.98px) {
                 width: 100%;
             }
         }
@@ -33,7 +36,13 @@
                 align-items: center;
                 justify-content: center;
             }
-            @media screen and (max-width: 464.98px) {
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                flex: 1 1 calc(100% / 4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @media screen and (max-width: 374.98px) {
                 flex: 1 1 calc(100% / 4);
                 display: flex;
                 align-items: center;

@@ -57,6 +57,24 @@
         padding: 0;
         margin-left: auto;
     }
+    &--primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 20px;
+        background-color: var(--accedent-primary);
+        border: 1px solid var(--accedent-primary);
+        border-radius: 100px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover,
+        &:active,
+        &:focus {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.025);
+        }
+    }
     &--secondary {
         display: flex;
         align-items: center;
