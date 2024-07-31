@@ -93,6 +93,25 @@
             transform: scale(1.025);
         }
     }
+    &--transparent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid var(--accedent-primary);
+        border-radius: 100px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.3s ease-in-out;
+        &:hover,
+        &:active,
+        &:focus {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.025);
+        }
+    }
     &--icon {
         width: 30px;
         min-width: 30px;
