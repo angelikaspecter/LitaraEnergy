@@ -2124,7 +2124,41 @@ html {
 .services {
   flex-direction: column;
   justify-content: center;
-  gap: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .services {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .services {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .services {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .services {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .services {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .services {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .services {
+    gap: 32px;
+  }
 }
 .services__list {
   width: 100%;
@@ -2723,7 +2757,41 @@ input[type=checkbox]:checked + label::after {
 .stec {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+}
+@media screen and (min-width: 1440px) {
+  .stec {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .stec {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .stec {
+    gap: 48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .stec {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .stec {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .stec {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .stec {
+    gap: 32px;
+  }
 }
 .stec__list {
   width: 100%;
@@ -2882,6 +2950,146 @@ input[type=checkbox]:checked + label::after {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-primary) url(../img/contact-bg.webp) no-repeat 50% 50%/cover;
+}
+@media screen and (min-width: 1440px) {
+  .contact {
+    gap: 48px;
+    padding: 48px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .contact {
+    gap: 48px;
+    padding: 48px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .contact {
+    gap: 48px;
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact {
+    gap: 32px;
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .contact {
+    gap: 32px;
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .contact {
+    gap: 32px;
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .contact {
+    gap: 32px;
+    padding: 24px;
+  }
+}
+.contact__header {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .contact__header {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .contact__header {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .contact__header {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact__header {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .contact__header {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .contact__header {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .contact__header {
+    gap: 16px;
+  }
+}
+.contact__footer {
+  width: 100%;
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .contact__form {
+    flex-direction: row;
+  }
+  .contact__form .form__wrap--checkbox {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+  .contact__form {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279.98px) {
+  .contact__form {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .contact__form {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 465px) and (max-width: 767.98px) {
+  .contact__form {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 464.98px) {
+  .contact__form {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 374.98px) {
+  .contact__form {
+    flex-direction: column;
+  }
+}
+.contact__form--wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 * {
