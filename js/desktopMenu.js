@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isAdminMenuButton) {
             event.preventDefault();
             const menu = isAdminMenuButton.closest('li')?.querySelector('.admin__desktop--inner') ||
-                         isAdminMenuButton.closest('.nav__header--main')?.querySelector('.admin__desktop--inner');
-            
+                isAdminMenuButton.closest('.nav__header--main')?.querySelector('.admin__desktop--inner');
+
             if (menu) {
                 // Close the currently open menu if it's different
                 if (currentOpenMenu && currentOpenMenu !== menu) {
