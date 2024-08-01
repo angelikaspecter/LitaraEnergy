@@ -10,16 +10,339 @@
 </head>
 
 <body>
+    <header class="section section--header header">
+        <div class="header__top">
+            <a class="header__mail" href="mailto:">
+                <img loading="lazy" src="img/email-small.svg" width="16" height="16" alt="email icon"
+                    class="icon icon--small">
+                <span class="desc desc--normal desc--thin desc--light">litaraenergy@info.pl</span>
+            </a>
+            <ul class="header__social">
+                <li class="header__social--item">
+                    <a href="#" class="header__social--btn">
+                        <img loading="lazy" src="img/instagram-small.svg" width="18" height="18" alt="instagram icon"
+                            class="icon icon--small">
+                    </a>
+                </li>
+                <li class="header__social--item">
+                    <a href="#" class="header__social--btn">
+                        <img loading="lazy" src="img/facebook-small.svg" width="18" height="18" alt="facebook icon"
+                            class="icon icon--small">
+                    </a>
+                </li>
+                <li class="header__social--item">
+                    <a href="#" class="header__social--btn">
+                        <img loading="lazy" src="img/whatsapp-small.svg" width="18" height="18" alt="whatsapp icon"
+                            class="icon icon--small">
+                    </a>
+                </li>
+                <li class="header__social--item">
+                    <a href="#" class="header__social--btn">
+                        <img loading="lazy" src="img/youtube-small.svg" width="18" height="18" alt="youtube icon"
+                            class="icon icon--small">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__middle">
+            <a class="header__logo" href="#">
+                <img loading="lazy" src="img/logo-dark.svg" width="150" height="47" alt="Litara Energy Logo"
+                    class="logo logo--header">
+            </a>
+            <form action="" method="post" class="search">
+                <input class="search__input" type="search" name="search" id="search" placeholder="Szukać towarów">
+                <button class="search__btn btn btn--search">
+                    <img src="img/search.svg" width="24" height="24" alt="search btn" class="icon icon--normal">
+                </button>
+            </form>
+            <ul class="admin admin__list">
+                <li class="admin admin__item admin__item--desktop">
+                    <button class="btn btn--admin">
+                        <img loading="lazy" src="img/user.svg" width="24" height="24" alt="Sign in / Register"
+                            class="icon icon--normal">
+                        <span class="desc desc--extrasmall desc--middle">Sign In / Register</span>
+                    </button>
+                </li>
+                <li class="admin admin__item admin__item--desktop">
+                    <button class="btn btn--admin">
+                        <img loading="lazy" src="img/heart.svg" width="24" height="24" alt="Wish List"
+                            class="icon icon--normal">
+                        <span class="desc desc--extrasmall desc--middle">Wish List</span>
+                    </button>
+                </li>
+                <li class="admin admin__item admin__item--desktop">
+                    <button class="btn btn--admin">
+                        <span class="admin__count">10</span>
+                        <img loading="lazy" src="img/cart.svg" width="24" height="24" alt="Cart"
+                            class="icon icon--normal">
+                        <span class="desc desc--extrasmall desc--middle">Cart</span>
+                    </button>
+                </li>
+                <li class="admin admin__item admin__item--desktop">
+                    <button class="btn btn--admin btnMenu">
+                        <img loading="lazy" src="img/menu.svg" width="24" height="24" alt="Cart"
+                            class="icon icon--normal">
+                    </button>
+                </li>
+            </ul>
+            <ul class="admin admin__mobile hide">
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin">
+                        <img loading="lazy" src="img/user.svg" width="24" height="24"
+                            alt="Sign in / Register" class="icon icon--normal">
+                    </button>
+                    <button class="btn btn--admin">
+                        <img loading="lazy" src="img/heart.svg" width="24" height="24" alt="Wish List"
+                            class="icon icon--normal">
+                    </button>
+                    <button class="btn btn--admin">
+                        <span class="admin__count">10</span>
+                        <img loading="lazy" src="img/cart.svg" width="24" height="24" alt="Cart"
+                            class="icon icon--normal">
+                    </button>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <form action="" method="post" class="search">
+                        <input class="search__input" type="search" name="search" id="search" placeholder="Szukać towarów">
+                        <button class="search__btn btn btn--search">
+                            <img src="img/search.svg" width="24" height="24" alt="search btn" class="icon icon--normal">
+                        </button>
+                    </form>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">Katalog</span>
+                    </button>
+                    <ul class="admin admin__mobile--inner hide">
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">Uslugi</span>
+                    </button>
+                    <ul class="admin admin__mobile--inner hide">
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">Strefa Klienta</span>
+                    </button>
+                    <ul class="admin admin__mobile--inner hide">
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">O firmie</span>
+                    </button>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">Blog</span>
+                    </button>
+                    <ul class="admin admin__mobile--inner hide">
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Blogi</span>
+                            </a>
+                        </li>
+                        <li class="admin admin__mobile--link">
+                            <a href="#" class="btn btn--admin-mobile">
+                                <span class="desc desc--extrasmall desc--middle">Szczegóły bloga</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="admin admin__mobile--item">
+                    <button class="btn btn--admin-mobile">
+                        <span class="desc desc--extrasmall desc--dark">Kontakt</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="header__bottom">
+            <div class="nav nav__header--main">
+                <button class="btn btn--admin-menu">
+                    <img loading="lazy" src="img/menu.svg" width="24" height="24" alt="Cart" class="icon icon--normal">
+                    <span class="desc desc--normal desc--medium desc--dark">Katalog</span>
+                </button>
+                <ul class="admin admin__desktop--inner hide">
+                    <li class="admin admin__desktop--link">
+                        <a href="#" class="btn btn--admin-mobile">
+                            <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                        </a>
+                    </li>
+                    <li class="admin admin__desktop--link">
+                        <a href="#" class="btn btn--admin-mobile">
+                            <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                        </a>
+                    </li>
+                    <li class="admin admin__desktop--link">
+                        <a href="#" class="btn btn--admin-mobile">
+                            <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav nav__header">
+                <li class="nav nav__header--item">
+                    <a href="" class="nav nav__header--link">
+                        <button class="btn btn--admin-menu">
+                            <span class="desc desc--normal desc--dark">Uslugi</span> <img loading="lazy"
+                                src="img/arrow-down.svg" width="14" height="14" alt="arrow down"
+                                class="icon icon--small">
+                        </button>
+                        <ul class="admin admin__desktop--inner hide">
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                                </a>
+                            </li>
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                                </a>
+                            </li>
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav nav__header--item">
+                    <a href="" class="nav nav__header--link">
+                        <button class="btn btn--admin-menu">
+                            <span class="desc desc--normal desc--dark">Strefa Klienta</span> <img loading="lazy"
+                                src="img/arrow-down.svg" width="14" height="14" alt="arrow down"
+                                class="icon icon--small">
+                        </button>
+                        <ul class="admin admin__desktop--inner hide">
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 1</span>
+                                </a>
+                            </li>
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 2</span>
+                                </a>
+                            </li>
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Link 3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav nav__header--item">
+                    <a href="" class="nav nav__header--link">
+                        <button class="btn btn--admin-menu">
+                            <span class="desc desc--normal desc--dark">O firmie</span>
+                            <img loading="lazy" src="img/arrow-down.svg" width="14" height="14" alt="arrow down"
+                                class="icon icon--small hide">
+                        </button>
+                    </a>
+                </li>
+                <li class="nav nav__header--item">
+                    <a href="" class="nav nav__header--link">
+                        <button class="btn btn--admin-menu">
+                            <span class="desc desc--normal desc--dark">Blog</span>
+                            <img loading="lazy" src="img/arrow-down.svg" width="14" height="14" alt="arrow down"
+                                class="icon icon--small">
+                        </button>
+                        <ul class="admin admin__desktop--inner hide">
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Blogi</span>
+                                </a>
+                            </li>
+                            <li class="admin admin__desktop--link">
+                                <a href="#" class="btn btn--admin-mobile">
+                                    <span class="desc desc--extrasmall desc--middle">Szczegóły bloga</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="nav nav__header--item">
+                    <a href="" class="nav nav__header--link">
+                        <button class="btn btn--admin-menu">
+                            <span class="desc desc--normal desc--dark">Kontakt</span>
+                            <img loading="lazy" src="img/arrow-down.svg" width="14" height="14" alt="arrow down"
+                                class="icon icon--small hide">
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <div class="header__contacts">
+                <img src="img/phone-middle.svg" width="44" height="44" alt="Phone icon" class="icon icon--large">
+                <div class="header__info">
+                    <a class="desc desc--large desc--bold desc--color" href="tel:++48604687041">+48 604 687 041</a>
+                    <span class="desc desc--normal desc--dark">Zadzwoń do Nas</span>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="content">
         <section class="promo">
             <ul class="promo__list">
                 <li class="promo__item promo__item--small">
                     <div class="promo__item--info">
-                        <p class="desc desc--extrasmall desc--semibold desc--color desc--uppercase">Planujesz instalację ładowarki do aut elektrycznych - wallbox?</p>
-                        <h2 class="title title--section title--bold title--dark">Zamów u nas stację ładowania i zyskaj rabat na jej montaż!</h2>
+                        <p class="desc desc--extrasmall desc--semibold desc--color desc--uppercase">Planujesz instalację
+                            ładowarki do aut elektrycznych - wallbox?</p>
+                        <h2 class="title title--section title--bold title--dark">Zamów u nas stację ładowania i zyskaj
+                            rabat na jej montaż!</h2>
                     </div>
                     <div class="promo__item--info">
-                        <p class="desc desc--normal desc--thin desc--dark">Oferujemy stacje ładowania samochodów AC, DC, akcesoria w naszym sklepie internetowym.</p>
+                        <p class="desc desc--normal desc--thin desc--dark">Oferujemy stacje ładowania samochodów AC, DC,
+                            akcesoria w naszym sklepie internetowym.</p>
                         <a href="#" class="btn btn--primary">
                             <span class="desc desc--extrasmall desc--bold desc--light desc--uppercase">Katalog</span>
                             <img src="img/btn-arrow-light.svg" width="15" height="1" alt="arrow right"
@@ -954,6 +1277,8 @@
             </li>
         </ul>
     </footer>
+    <script src="js/desktopMenu.js"></script>
+    <script src="js/mobileMenu.js"></script>
     <script src="js/faq.js"></script>
 </body>
 

@@ -2,29 +2,32 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     &__top {
         width: 100%;
         background-color: var(--dark-primary);
-        padding: 0 10vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media screen and (min-width: 992px) and (max-width: 1439.98px) {
-            padding: 10px 40px;
-            justify-content: space-between;
+        @media screen and (min-width: 1440px) {
+            padding: 0 200px;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            padding: 0 150px;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            padding: 0 100px;
         }
         @media screen and (min-width: 768px) and (max-width: 991.98px) {
-            padding: 10px 40px;
-            justify-content: space-between;
+            padding: 0 50px;
         }
         @media screen and (min-width: 465px) and (max-width: 767.98px) {
+            padding: 0 40px;
+        }
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
             padding: 0;
             flex-direction: column;
         }
-        @media screen and (max-width: 464.98px) {
+        @media screen and (max-width: 374.98px) {
             padding: 0;
             flex-direction: column;
         }
@@ -34,69 +37,174 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
-        padding: 13.5px 10vw;
         background-color: var(--light-primary);
-        @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-            padding: 20px 40px;
-            flex-wrap: wrap;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.15);
+        position: relative;
+        @media screen and (min-width: 1440px) {
+            padding: 0 200px;
+            gap: 32px;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            padding: 0 150px;
+            gap: 32px;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            padding: 0 100px;
+            gap: 32px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            padding: 0 20px 0 50px;
             gap: 20px;
         }
         @media screen and (min-width: 465px) and (max-width: 767.98px) {
-            padding: 10px 20px;
-            justify-content: space-between;
+            padding: 0 20px;
+            gap: 20px;
         }
-        @media screen and (max-width: 464.98px) {
-            padding: 10px 20px;
-            justify-content: center;
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            padding: 0;
+            gap: 20px;
+        }
+        @media screen and (max-width: 374.98px) {
+            padding: 0;
+            gap: 20px;
         }
     }
     &__bottom {
         width: 100%;
-        padding: 0 10vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--light-primary);
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        @media screen and (min-width: 992px) and (max-width: 1439.98px) {
-            padding: 10px 40px;
-            justify-content: space-between;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
+        @media screen and (min-width: 1440px) {
+            padding: 0 200px 0 180px;
+            gap: 0;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            padding: 0 150px 0 130px;
+            gap: 0;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            padding: 0 100px 0 80px;
+            gap: 32px;
         }
         @media screen and (min-width: 768px) and (max-width: 991.98px) {
-            padding: 10px 40px;
-            justify-content: space-between;
+            padding: 0 50px 0 30px;
+            gap: 20px;
         }
         @media screen and (min-width: 465px) and (max-width: 767.98px) {
-            padding: 10px 20px;
-            justify-content: space-between;
+            padding: 0 40px 0 20px;
+            gap: 20px;
         }
-        @media screen and (max-width: 464.98px) {
-            padding: 10px 20px;
-            justify-content: center;
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            padding: 0;
+            gap: 20px;
+        }
+        @media screen and (max-width: 374.98px) {
+            padding: 0;
+            gap: 20px;
         }
     }
     &__mail {
         display: flex;
         align-items: center;
         gap: 10px;
-        @media screen and (min-width: 465px) and (max-width: 767.98px) {
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
             width: 100%;
             justify-content: center;
-            padding: 13.5px 10vw;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
         }
-        @media screen and (max-width: 464.98px) {
+        @media screen and (max-width: 374.98px) {
             width: 100%;
             justify-content: center;
-            padding: 13.5px 10vw;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+        }
+    }
+    &__social {
+        display: flex;
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 374.98px) {
+            width: 100%;
+        }
+        &--item {
+            display: flex;
+            cursor: pointer;
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                justify-content: center;
+                flex: 1 1 calc(100% / 4);
+                border-right: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+                &:last-child {
+                    border: none;
+                }
+            }
+            @media screen and (max-width: 374.98px) {
+                justify-content: center;
+                flex: 1 1 calc(100% / 4);
+                border-right: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+        &--btn {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &:active,
+            &:focus {
+                opacity: 0.5;
+            }
+        }
+    }
+    &__logo {
+        @media screen and (min-width: 1440px) {
+            width: 150px;
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            min-width: 150px;
+        }
+        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            min-width: 150px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            min-width: 150px;
+        }
+        @media screen and (min-width: 465px) and (max-width: 767.98px) {
+            width: 140px;
+            min-width: 100px;
+            padding: 0px 20px;
+        }
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            min-width: 100px;
+            padding: 0px 20px;
+        }
+        @media screen and (max-width: 374.98px) {
+            min-width: 100px;
+            padding: 0px 20px;
         }
     }
     &__contacts {
         display: flex;
         align-items: center;
         gap: 16px;
+        margin-left: auto;
+        @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
+        @media screen and (max-width: 374.98px) {
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+        }
     }
     &__info {
         display: flex;

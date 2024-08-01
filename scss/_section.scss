@@ -1,19 +1,9 @@
 .section {
     &--header {
-        @media screen and (min-width: 1440px) {
-        }
-        @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
-        }
-        @media screen and (min-width: 992px) and (max-width: 1279.98px) {
-        }
-        @media screen and (min-width: 768px) and (max-width: 991.98px) {
-        }
-        @media screen and (min-width: 465px) and (max-width: 767.98px) {
-        }
-        @media screen and (min-width: 375px) and (max-width: 464.98px) {
-        }
-        @media screen and (max-width: 374.98px) {
-        }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &--content {
         width: 100%;
@@ -24,7 +14,7 @@
             padding: 100px 200px;
         }
         @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
-            padding: 100px 200px;
+            padding: 100px 150px;
         }
         @media screen and (min-width: 992px) and (max-width: 1279.98px) {
             padding: 75px 100px;
@@ -52,7 +42,7 @@
             padding: 50px 200px;
         }
         @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
-            padding: 50px 200px;
+            padding: 50px 150px;
         }
         @media screen and (min-width: 992px) and (max-width: 1279.98px) {
             padding: 50px 100px;

@@ -3,18 +3,35 @@
         display: flex;
         align-items: center;
         margin-right: auto;
-        @media screen and (max-width: 1465.98px) {
+        @media screen and (max-width: 1279.98px) {
             display: none;
         }
         &--main {
             border-right: 1px solid rgba($color: #000000, $alpha: 0.15);
             position: relative;
-            @media screen and (max-width: 464.98px) {
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+                display: none;
+            }
+            @media screen and (max-width: 374.98px) {
                 display: none;
             }
         }
         &--item {
             position: relative;
+            @media screen and (min-width: 1440px) {
+            }
+            @media screen and (min-width: 1280px) and (max-width: 1439.98px) {
+            }
+            @media screen and (min-width: 992px) and (max-width: 1279.98px) {
+            }
+            @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            }
+            @media screen and (min-width: 465px) and (max-width: 767.98px) {
+            }
+            @media screen and (min-width: 375px) and (max-width: 464.98px) {
+            }
+            @media screen and (max-width: 374.98px) {
+            }
         }
         &--link {
             width: 100%;
