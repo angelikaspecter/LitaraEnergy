@@ -88,8 +88,8 @@
             <ul class="admin admin__mobile hide">
                 <li class="admin admin__mobile--item">
                     <button class="btn btn--admin">
-                        <img loading="lazy" src="img/user.svg" width="24" height="24"
-                            alt="Sign in / Register" class="icon icon--normal">
+                        <img loading="lazy" src="img/user.svg" width="24" height="24" alt="Sign in / Register"
+                            class="icon icon--normal">
                     </button>
                     <button class="btn btn--admin">
                         <img loading="lazy" src="img/heart.svg" width="24" height="24" alt="Wish List"
@@ -103,7 +103,8 @@
                 </li>
                 <li class="admin admin__mobile--item">
                     <form action="" method="post" class="search">
-                        <input class="search__input" type="search" name="search" id="search" placeholder="Szukać towarów">
+                        <input class="search__input" type="search" name="search" id="search"
+                            placeholder="Szukać towarów">
                         <button class="search__btn btn btn--search">
                             <img src="img/search.svg" width="24" height="24" alt="search btn" class="icon icon--normal">
                         </button>
@@ -1279,12 +1280,72 @@
     </footer>
     <div class="popup">
         <div class="popup__wrap">
-            
+            <div class="register">
+                <header class="register__header">
+                    <button class="btn btn--register active" id="signInButton">
+                        <span class="desc desc--normal desc--medium">Sign In</span>
+                    </button>
+                    <button class="btn btn--register" id="registerButton">
+                        <span class="desc desc--normal desc--medium">Register</span>
+                    </button>
+                    <button class="btn btn--close" id="closeButton">
+                        <img src="img/close.svg" width="24" height="24" alt="close" class="icon icon--small">
+                    </button>
+                </header>
+                <footer class="register__footer signIn">
+                    <form action="" method="post" class="form">
+                        <label for="name" class="form__icon">
+                            <img src="img/user-light.svg" width="25" height="25" alt="user" class="icon icon--small user">
+                            <input type="text" name="name" id="name" class="form__input desc desc--normal desc--thin desc--light" placeholder="Username or e-mail">
+                        </label>
+                        <label for="password" class="form__icon">
+                            <img src="img/lock.svg" width="25" height="25" alt="email" class="icon icon--small password">
+                            <input type="password" name="password" id="password" class="form__input desc desc--normal desc--thin desc--light" placeholder="Password">
+                            <img src="img/eye-outline.svg" width="25" height="25" alt="show" class="icon icon--small eye">
+                            <img src="img/eye-off-outline.svg" width="25" height="25" alt="hide" class="icon icon--small eye-off hide">
+                        </label>
+                        <div class="form__wrap--row">
+                            <div class="form__wrap--row">
+                                <input type="checkbox" name="checkbox" class="form__checkbox" id="checkbox">
+                                <label for="checkbox" class="form__label">
+                                    <span class="desc desc--extrasmall desc--thin desc--light">Remember me</span>
+                                </label>
+                            </div>
+                            <a href="#" class="desc desc--extrasmall desc--thin desc--light">Forgot password</a>
+                        </div>
+                        <button type="submit" class="btn btn--primary desc desc--medium desc--normal desc--light">Sign In</button>
+                        <a href="#" class="btn btn--text desc desc--extrasmall desc--thin desc--light mobile">Forgot password</a>
+                    </form>
+                </footer>
+                <footer class="register__footer signUp hide">
+                    <form action="" method="post" class="form" id="signUpForm">
+                        <label for="name" class="form__icon">
+                            <img src="img/user-light.svg" width="25" height="25" alt="user" class="icon icon--small user">
+                            <input type="text" name="name" id="name" class="form__input desc desc--normal desc--thin desc--light" placeholder="Username or e-mail">
+                        </label>
+                        <label for="password" class="form__icon">
+                            <img src="img/lock.svg" width="25" height="25" alt="email" class="icon icon--small password">
+                            <input type="password" name="password" id="passwordSignUp" class="form__input desc desc--normal desc--thin desc--light" placeholder="Password">
+                            <img src="img/eye-outline.svg" width="25" height="25" alt="show" class="icon icon--small eye">
+                            <img src="img/eye-off-outline.svg" width="25" height="25" alt="hide" class="icon icon--small eye-off hide">
+                        </label>
+                        <label for="confirm-password" class="form__icon">
+                            <img src="img/lock.svg" width="25" height="25" alt="email" class="icon icon--small password">
+                            <input type="password" name="confirm-password" id="confirmPasswordSignUp" class="form__input desc desc--normal desc--thin desc--light" placeholder="Confirm password">
+                            <img src="img/eye-outline.svg" width="25" height="25" alt="show" class="icon icon--small eye">
+                            <img src="img/eye-off-outline.svg" width="25" height="25" alt="hide" class="icon icon--small eye-off hide">
+                        </label>
+                        <span class="desc desc--error hide">The password was entered incorrectly. Check for errors.</span>
+                        <button type="submit" class="btn btn--primary desc desc--medium desc--normal desc--light">Register</button>
+                    </form>
+                </footer>
+            </div>
         </div>
     </div>
     <script src="js/desktopMenu.js"></script>
     <script src="js/mobileMenu.js"></script>
     <script src="js/faq.js"></script>
+    <script src="js/register-form.js"></script>
 </body>
 
 </html>

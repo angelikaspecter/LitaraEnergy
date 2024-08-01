@@ -20,6 +20,9 @@
     &--color {
         color: var(--accedent-primary);
     }
+    &--error {
+        color: red;
+    }
     &--thin {
         font-weight: 300;
     }
