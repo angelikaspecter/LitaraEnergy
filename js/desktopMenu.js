@@ -30,3 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const registerButtons = document.querySelectorAll('.btnRegister');
+
+    const popup = document.querySelector('.popupRegister');
+
+    registerButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Убираем класс hide у попапа
+            popup.classList.remove('hide');
+        });
+    });
+});

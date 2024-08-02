@@ -57,21 +57,21 @@
             </form>
             <ul class="admin admin__list">
                 <li class="admin admin__item admin__item--desktop">
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnRegister">
                         <img loading="lazy" src="img/user.svg" width="24" height="24" alt="Sign in / Register"
                             class="icon icon--normal">
                         <span class="desc desc--extrasmall desc--middle">Sign In / Register</span>
                     </button>
                 </li>
                 <li class="admin admin__item admin__item--desktop">
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnWish">
                         <img loading="lazy" src="img/heart.svg" width="24" height="24" alt="Wish List"
                             class="icon icon--normal">
                         <span class="desc desc--extrasmall desc--middle">Wish List</span>
                     </button>
                 </li>
                 <li class="admin admin__item admin__item--desktop">
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnCart">
                         <span class="admin__count">10</span>
                         <img loading="lazy" src="img/cart.svg" width="24" height="24" alt="Cart"
                             class="icon icon--normal">
@@ -87,15 +87,15 @@
             </ul>
             <ul class="admin admin__mobile hide">
                 <li class="admin admin__mobile--item">
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnRegister">
                         <img loading="lazy" src="img/user.svg" width="24" height="24" alt="Sign in / Register"
                             class="icon icon--normal">
                     </button>
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnWish">
                         <img loading="lazy" src="img/heart.svg" width="24" height="24" alt="Wish List"
                             class="icon icon--normal">
                     </button>
-                    <button class="btn btn--admin">
+                    <button class="btn btn--admin btnCart">
                         <span class="admin__count">10</span>
                         <img loading="lazy" src="img/cart.svg" width="24" height="24" alt="Cart"
                             class="icon icon--normal">
@@ -457,8 +457,8 @@
                             name="textarea" id="textarea" cols="20" rows="5" placeholder="Twoje pytanie"></textarea>
                         <div class="form__wrap--checkbox">
                             <div class="form__wrap--row">
-                                <input type="checkbox" name="checkbox" class="form__checkbox" id="checkbox">
-                                <label for="checkbox" class="form__label">
+                                <input type="checkbox" name="checkboxFrst" class="form__checkbox" id="checkboxFrst">
+                                <label for="checkboxFrst" class="form__label">
                                     <p class="desc desc--extrasmall desc--thin desc--light">Zapoznałem się z <a href="#"
                                             target="_blank"
                                             class="desc desc--extrasmall desc--thin desc--light">„Polityką
@@ -659,8 +659,8 @@
                         </div>
                         <div class="form__wrap--checkbox">
                             <div class="form__wrap--row">
-                                <input type="checkbox" name="checkbox" class="form__checkbox" id="checkbox">
-                                <label for="checkbox" class="form__label">
+                                <input type="checkbox" name="checkboxScnd" class="form__checkbox" id="checkboxScnd">
+                                <label for="checkboxScnd" class="form__label">
                                     <p class="desc desc--extrasmall desc--thin desc--light">Zapoznałem się z <a href="#"
                                             target="_blank"
                                             class="desc desc--extrasmall desc--thin desc--light">„Polityką
@@ -1278,7 +1278,7 @@
             </li>
         </ul>
     </footer>
-    <div class="popup">
+    <div class="popup popupRegister hide">
         <div class="popup__wrap">
             <div class="register">
                 <header class="register__header">
@@ -1306,8 +1306,8 @@
                         </label>
                         <div class="form__wrap--row">
                             <div class="form__wrap--row">
-                                <input type="checkbox" name="checkbox" class="form__checkbox" id="checkbox">
-                                <label for="checkbox" class="form__label">
+                                <input type="checkbox" name="checkboxThrd" class="form__checkbox" id="checkboxThrd">
+                                <label for="checkboxThrd" class="form__label">
                                     <span class="desc desc--extrasmall desc--thin desc--light">Remember me</span>
                                 </label>
                             </div>

@@ -1696,7 +1696,7 @@ html {
   position: absolute;
   top: 20%;
   right: 0;
-  z-index: 10;
+  z-index: 2;
   transform: translateX(-37px) translateY(-30%);
 }
 .admin__desktop-item {
@@ -3262,7 +3262,7 @@ input[type=checkbox]:checked + label::after {
   content: "✔";
   position: absolute;
   left: 5px;
-  top: -3px;
+  top: -1px;
   font-size: 14px;
   color: white;
   transform: scale(1);
@@ -4089,6 +4089,7 @@ input[type=checkbox]:checked + label::after {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9999999999;
 }
 .popup__wrap {
   width: 100%;
